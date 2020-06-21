@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: hello.world
+
+spec:
+  selector:
+    matchLabels:
+      app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+        - name: hello
+          image: basic-kubectl:latest
+          imagePullPolicy: Never # necessary to find image locally
+          ports:
+            - containerPort: 3000
+

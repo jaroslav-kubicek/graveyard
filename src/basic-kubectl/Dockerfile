@@ -7,4 +7,4 @@ RUN yarn install --production
 
 COPY . .
 
-CMD [ "node", "index.js" ]
+CMD [ "yarn", "start" ]
