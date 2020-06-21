@@ -1,0 +1,8 @@
+{
+  "name": "graveyard",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Jaroslav Kubicek <jaroslav.kubicek@gmail.com>",
+  "license": "MIT",
+  "workspaces": ["src/*"]
+}
